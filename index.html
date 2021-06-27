@@ -1,92 +1,187 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>gabriele architetto marinelli enterprise</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
+  <head>
+    <title>gabriele architetto marinelli enterprise</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lekton"
+    />
 
-            .info {
-                font-family: "Lekton", monospace;
-                font-size: 0.85vw;
-                letter-spacing: 0.05em;
-                text-align: right;
-                color: black;
-                width: 30vw;
-                height: calc(1024/1820*30vw);
-                position: absolute;
-                top: 50%;
-                left: 16.5%;
-                transform: translate(-17%, -50%);
-                padding-top: 21vw;
-                opacity: 0.25;
-                line-height: 1.2vw;
-            }
+    <style>
+      .info-large {
+        display: unset;
+        font-family: "Lekton", monospace;
+        font-size: 0.85vw;
+        letter-spacing: 0.05em;
+        text-align: right;
+        color: black;
+        width: 30vw;
+        height: calc(1024 / 1820 * 30vw);
+        position: absolute;
+        top: 50%;
+        left: 16.5%;
+        transform: translate(-17%, -50%);
+        padding-top: 21vw;
+        opacity: 0.25;
+        line-height: 1.2vw;
+      }
 
-            .logo {
-                width: 100vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
-            }
+      .info-small {
+        display: none;
+      }
 
-            .fb-logo {
-                width: 1.2vw;
-                height: 1.2vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-950%, +850%);
-                opacity: 0.25;
-            }
+      .logo-large {
+        display: unset;
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
 
-            .ig-logo {
-                width: 1.2vw;
-                height: 1.2vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-800%, +850%);
-                opacity: 0.25;
-            }
+      .logo-small {
+        display: none;
+      }
 
-        </style>
+      .fb-logo {
+        width: 1.2vw;
+        height: 1.2vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-950%, +850%);
+        opacity: 0.25;
+      }
 
-    </head>
+      .ig-logo {
+        width: 1.2vw;
+        height: 1.2vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-800%, +850%);
+        opacity: 0.25;
+      }
 
-    <body>
+      @media only screen and (max-device-width: 414px) {
+        .info-small {
+          display: unset;
+          font-family: "Lekton", monospace;
+          font-size: 2.8vw;
+          letter-spacing: 0.05em;
+          text-align: left;
+          color: black;
+          width: 60vw;
+          height: calc(360 / 640 * 60vw);
+          position: absolute;
+          top: 50%;
+          left: 26.5%;
+          transform: translate(17%, -50%);
+          padding-bottom: 11vw;
+          opacity: 0.25;
+          line-height: 3.7vw;
+        }
 
-        <div>
-            <img class="logo" src="assets/copertina provvisoria sito 4 solo titolo.svg">
-            
-            <div class="info">
-                gabriele architetto marinelli (enterprise)
-                <br>
-                via petrarca 3 - moie di maiolati spontini - ancona
-                <br>
-                347 37 19 432 - 0731 703 666
-                <br>
-                ga.mar.arch@gmail.com
-                <br>
-                gabriele.marinelli@archiworldpec.it
-                <br>
-                p.i. 02460620426
-            </div>
+        .info-large {
+          display: none;
+        }
 
-            <a href="https://www.facebook.com/gabriele.architetto.marinelli.enterprise">
-                <img class="fb-logo" src="assets/f_logo_RGB-Black_1024.svg">
-            </a>
+        .logo-large {
+          display: none;
+        }
 
-            <a href="https://www.instagram.com/gabrielemarinelli_gamestudio/">
-                <img class="ig-logo" src="assets/IG_glyph-logo_May2016.svg">
-            </a>
-        
-        </div>
+        .logo-small {
+          display: unset;
+          width: 100vw;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
 
-    </body>
+        .fb-logo {
+          width: 4.2vw;
+          height: 4.2vw;
+          position: absolute;
+          top: 50%;
+          left: 76%;
+          transform: translate(-950%, +320%);
+          opacity: 0.25;
+        }
+
+        .ig-logo {
+          width: 4.2vw;
+          height: 4.2vw;
+          position: absolute;
+          top: 50%;
+          left: 77%;
+          transform: translate(-800%, +320%);
+          opacity: 0.25;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img
+        class="logo-large"
+        src="assets/copertina provvisoria sito 4 solo titolo.svg"
+        alt="logo"
+      />
+
+      <img
+        class="logo-small"
+        src="assets/copertina provvisoria sito mobile 1 solo titolo.svg"
+        alt="logo"
+      />
+
+      <div class="info-large">
+        gabriele architetto marinelli (enterprise)
+        <br />
+        via petrarca 3 - moie di maiolati spontini - ancona
+        <br />
+        347 37 19 432 - 0731 703 666
+        <br />
+        ga.mar.arch@gmail.com
+        <br />
+        gabriele.marinelli@archiworldpec.it
+        <br />
+        p.i. 02460620426
+      </div>
+
+      <div class="info-small">
+        gabriele architetto marinelli
+        <br />
+        (enterprise)
+        <br />
+        via petrarca 3
+        <br />
+        moie di maiolati spontini - ancona
+        <br />
+        347 37 19 432 - 0731 703 666
+        <br />
+        ga.mar.arch@gmail.com
+        <br />
+        gabriele.marinelli@archiworldpec.it
+        <br />
+        p.i. 02460620426
+      </div>
+
+      <a
+        href="https://www.facebook.com/gabriele.architetto.marinelli.enterprise"
+      >
+        <img class="fb-logo" src="assets/f_logo_RGB-Black_1024.svg" />
+      </a>
+
+      <a href="https://www.instagram.com/gabrielemarinelli_gamestudio/">
+        <img class="ig-logo" src="assets/IG_glyph-logo_May2016.svg" />
+      </a>
+    </div>
+  </body>
 </html>
